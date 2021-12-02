@@ -16,7 +16,7 @@ $_['entry_order_status_pending']        = 'Order Status Pending';
 $_['entry_order_status_expiredate']     = 'Order Status Expiredate';
 $_['entry_order_status_canceled']       = 'Order Status Canceled';
 $_['entry_order_status_failed']         = 'Order Status Failed';
-$_['entry_order_status_processing']     = 'Order Status Processing';
+$_['entry_order_status_processing']     = 'Статус заказа в процессе оплаты';
 
 $_['entry_geo_zone']         = 'Географическая зона';
 $_['entry_status']           = 'Статус';

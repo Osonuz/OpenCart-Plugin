@@ -135,6 +135,12 @@ class ControllerExtensionPaymentOsongw extends Controller {
       $data['payment_osongw_completed_status_id'] = $this->config->get('payment_osongw_completed_status_id');
     }
 
+    if (isset($this->request->post['payment_osongw_processing_status_id'])) {
+      $data['payment_osongw_processing_status_id'] = $this->request->post['payment_osongw_processing_status_id'];
+    } else {
+      $data['payment_osongw_processing_status_id'] = $this->config->get('payment_osongw_processing_status_id');
+    }
+
     if (isset($this->request->post['payment_osongw_failed_status_id'])) {
       $data['payment_osongw_failed_status_id'] = $this->request->post['payment_osongw_failed_status_id'];
     } else {
