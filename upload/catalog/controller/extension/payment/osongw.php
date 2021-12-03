@@ -52,7 +52,7 @@ class ControllerExtensionPaymentOsongw extends Controller
 
     return $this->query("create", [
         'transaction_id'=> uniqid(),
-        'user_account'  => $order_info['email'],
+        'user_account'  => $order_info['order_id'], //$order_info['email'],
         'comment'       => $this->language->get('text_order'). '::' .$order_info['order_id'],
         'currency'      => "UZS", 
         'amount'        => $order_info['total'],
